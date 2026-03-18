@@ -45,17 +45,17 @@ monitors:
   - id: ai-service-reflow-prod # unique identifier
     name: AI Service API Production [ai-service.reflow.ai]
     description: 'AI Service API production' # default=empty
-    url: 'https://ai-service.reflow.ai/swagger-ui' # URL to fetch
-    method: GET # default=GET
-    expectStatus: 200 # operational status, default=200
+    url: 'https://ai-service.reflow.ai/' # URL to fetch
+    method: OPTIONS # default=GET
+    expectStatus: 204 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
     linkable: false # allows the title to be a link, default=true
 
   - id:  ai-service-reflow-staging # unique identifier
     name: AI Service API Staging [ai-service-staging.reflow.ai]
     description: 'AI Service API staging' # default=empty
-    url: 'https://ai-service-staging.reflow.ai/swagger-ui' # URL to fetch
-    method: GET # default=GET
-    expectStatus: 200 # operational status, default=200
+    url: 'https://ai-service-staging.reflow.ai/' # URL to fetch
+    method: OPTIONS # default=GET
+    expectStatus: 204 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
     linkable: false # allows the title to be a link, default=true
