@@ -59,3 +59,21 @@ monitors:
     expectStatus: 204 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
     linkable: false # allows the title to be a link, default=true
+
+  - id: app-reflow-sop-prod
+    name: Reflow SOP Web APP Production [sop.reflow.ai]
+    description: 'Reflow SOP Web APP Production'
+    url: 'https://sop.reflow.ai'
+    method: GET
+    expectStatus: 200
+    followRedirect: false
+    linkable: false
+
+  - id: app-reflow-sop-staging
+    name: Reflow SOP Web APP Staging [staging-sop.reflow.ai]
+    description: 'Reflow SOP Web APP Staging'
+    url: 'https://staging-sop.reflow.ai'
+    method: GET
+    expectStatus: 200
+    followRedirect: false
+    linkable: false
