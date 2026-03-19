@@ -42,6 +42,15 @@ monitors:
     followRedirect: false # should fetch follow redirects, default=false
     linkable: false # allows the title to be a link, default=true
 
+  - id: app-reflow-analytics-staging
+    name: Reflow Analytics Web APP Staging [analytics-staging.reflow.ai]
+    description: 'Reflow Staging Analytics Web APP'
+    url: 'https://staging-analytics.reflow.ai'
+    method: GET
+    expectStatus: 200
+    followRedirect: false
+    linkable: false
+
   - id: ai-service-reflow-prod # unique identifier
     name: AI Service API Production [ai-service.reflow.ai]
     description: 'AI Service API production' # default=empty
