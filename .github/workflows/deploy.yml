@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - fix/eng-2602-add-analytics-staging
   repository_dispatch:
   schedule:
     - cron: '0 0 1 * *'
